@@ -4,7 +4,7 @@
 
 pkgname=gnome-shell-extension-crystal-update
 _pkgname=crystal-update
-pkgver=51
+pkgver=49
 pkgrel=1
 pkgdesc="Convenient indicator for Crystal Linux updates in GNOME Shell."
 arch=('any')
@@ -13,8 +13,7 @@ license=('GPL3')
 depends=('gnome-shell' 'ame')
 conflicts=('gnome-shell-extensions-git')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz")
-sha256sums=('')
-
+sha256sums=('2a329a1d9e858a63db42147616f61eec7d0d6587e27f770a68b20e9b792bd762')
 
 package() {
   cd "${_pkgname}-${pkgver}"
