@@ -1,21 +1,19 @@
-# Maintainer: matt <matt[at]getcryst[dot]al>
+# Maintainer:  echo -n 'TWF0dCBDLiA8bWF0dEBnZXRjcnlzdC5hbD4='     | base64 -d
+# Contributor: echo -n 'TWljaGFsIFMuIDxtaWNoYWxAZ2V0Y3J5c3QuYWw+' | base64 -d
+# Contributor: echo -n 'Um9iaW4gQy4gPHJjYW5kYXVAZ2V0Y3J5c3QuYWw+' | base64 -d
 
-# Contributor: skrewball <aur at joickle dot com>
-# Contributor: Llewelyn Trahaearn <WoefulDerelict at GMail dot com>
-# Contributor: Michael Wendland <dev at michiwend dot com>
-
-_pkgname=crystal-update
 pkgname=gnome-shell-extension-crystal-update
-pkgver=49
+_pkgname=crystal-update
+pkgver=51
 pkgrel=1
 pkgdesc="Convenient indicator for Crystal Linux updates in GNOME Shell."
 arch=('any')
-url="https://github.com/crystal-linux/crystal-update"
+url="https://github.com/crystal-linux/${_pkgname}"
 license=('GPL3')
-depends=('fakeroot' 'gnome-shell' 'pacman-contrib')
+depends=('gnome-shell' 'ame')
 conflicts=('gnome-shell-extensions-git')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz")
-sha256sums=('dd64d45f2e2d258c8e042eeaa7a6c110fec951eec4bb2116f2f47c4b551a9334')
+sha256sums=('')
 
 
 package() {
