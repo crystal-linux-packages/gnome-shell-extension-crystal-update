@@ -5,13 +5,14 @@
 pkgname=gnome-shell-extension-crystal-update
 _pkgname=crystal-update
 pkgver=51
-pkgrel=1
+pkgrel=2
 pkgdesc="Convenient indicator for Crystal Linux updates in GNOME Shell."
 arch=('any')
 url="https://github.com/crystal-linux/${_pkgname}"
 license=('GPL3')
 depends=('gnome-shell' 'ame')
-conflicts=('gnome-shell-extensions-git')
+provides=('gnome-shell-extension-arch-update')
+conflicts=('gnome-shell-extension-arch-update' 'gnome-shell-extensions-git')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz")
 sha256sums=('4b680d65c3946e0f9fbe43dd5523fee7368209362eff28af225261226d1d7f6c')
 
